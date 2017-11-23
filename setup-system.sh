@@ -8,7 +8,7 @@ adduser magento magento
 
 apt-get update -q
 apt-get upgrade -qy
-apt-get install -qy unzip libgd-dev libicu-dev libmcrypt-dev libmhash-dev libssl-dev libxml2-dev libxslt-dev
+apt-get install -qy unzip libgd-dev libicu-dev libmcrypt-dev libmhash-dev libssl-dev libxml2-dev libxslt-dev libjpeg-dev libpng-dev
 
 docker-php-ext-install gd intl mcrypt openssl pdo_mysql soap xml xsl zip json iconv opcache
 
