@@ -5,7 +5,7 @@ set -e
 apt-get update -q
 apt-get upgrade -qy
 apt-get install -qy unzip libgd-dev libicu-dev libmcrypt-dev libmhash-dev libssl-dev libxml2-dev libxslt-dev \
-        libjpeg-dev libpng-dev libfreetype6-dev netcat-traditional nano vi
+        libjpeg-dev libpng-dev libfreetype6-dev netcat-traditional nano vim
 
 docker-php-ext-configure gd --with-jpeg-dir=/usr/lib --with-freetype-dir=/usr/lib
 
