@@ -1,8 +1,5 @@
 FROM php:7.1.11-fpm-jessie
 
-ARG MAGENTO_UID=1000
-ARG MAGENTO_GID=1000
-
 COPY docker-php-ext-install /usr/local/bin/
 COPY setup-system.sh /opt/setup-system.sh
 RUN /opt/setup-system.sh
