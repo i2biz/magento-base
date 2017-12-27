@@ -11,5 +11,9 @@ docker-php-ext-configure gd --with-jpeg-dir=/usr/lib --with-freetype-dir=/usr/li
 
 docker-php-ext-install gd intl mcrypt openssl pdo_mysql soap xml xsl zip json iconv opcache
 
+pecl install redis-3.1.0
+echo "n" | pecl install lzf-1.6.6
+docker-php-ext-enable redis lzf
+
 rm -rf /var/lib/apt/lists/
 apt-get clean
