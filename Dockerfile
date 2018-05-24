@@ -1,4 +1,4 @@
-FROM php:7.0.25-fpm-jessie
+FROM php:7.1.17-cli-jessie
 
 COPY docker-php-ext-install /usr/local/bin/
 COPY setup-system.sh /opt/setup-system.sh

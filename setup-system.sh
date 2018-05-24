@@ -9,7 +9,7 @@ apt-get install -qy unzip libgd-dev libicu-dev libmcrypt-dev libmhash-dev libssl
 
 docker-php-ext-configure gd --with-jpeg-dir=/usr/lib --with-freetype-dir=/usr/lib
 
-docker-php-ext-install gd intl mcrypt openssl pdo_mysql soap xml xsl zip json iconv opcache
+docker-php-ext-install gd intl mcrypt openssl pdo_mysql soap xml xsl zip json iconv opcache bcmath
 
 pecl install redis-3.1.5
 docker-php-ext-enable redis
